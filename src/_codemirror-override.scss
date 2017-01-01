@@ -1,0 +1,41 @@
+.CodeMirror {
+  height: $smde-height-container;
+  min-height: $smde-min-height-container;
+  border: 1px solid $smde-color-border;
+  border-bottom-left-radius: $smde-border-radius;
+  border-bottom-right-radius: $smde-border-radius;
+  padding: $smde-padding-container;
+  font-family: $smde-font-family;
+  font-size: $smde-font-size;
+  line-height: $smde-line-height;
+  color: $smde-color-text;
+  z-index: $smde-z-index-container;
+}
+
+.CodeMirror-scroll {
+  min-height: $smde-min-height-container;
+  margin-bottom: -$smde-margin-hidden-scrollbar;
+  margin-right: -$smde-margin-hidden-scrollbar;
+  padding-bottom: $smde-margin-hidden-scrollbar;
+}
+
+.CodeMirror-fullscreen {
+  background: $smde-color-background;
+  position: fixed !important;
+  top: $smde-height-toolbar-fullscreen;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  z-index: $smde-z-index-fullscreen;
+  border: 0;
+  border-top: 1px solid $smde-color-border;
+}
+
+.CodeMirror-sided {
+  width: 50% !important;
+}
+
+.CodeMirror pre {
+  padding: 0 $smde-padding-line;
+}

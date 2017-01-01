@@ -1,0 +1,159 @@
+//
+// Colors
+//
+
+
+// Background color
+$smde-color-background: #fff;
+$smde-color-background-code: rgba(0, 0, 0, 0.05);
+$smde-color-background-selected: rgba(0, 0, 0, 0.1);
+
+// Border color
+$smde-color-border: #ddd !default;
+
+// Text color
+$smde-color-text: #333;
+$smde-color-text-muted: #777;
+
+// HTML tag and image alt
+$smde-color-tag: #40bf40;
+// HTML attribute key
+$smde-color-attribute-key: $smde-color-tag;
+// HTML attribute value
+$smde-color-attribute-value: $smde-color-text-muted;
+
+$smde-color-link: #0080ff;
+// The url part of a Link
+$smde-color-link-url: $smde-color-text-muted;
+
+$smde-color-quote: $smde-color-text-muted;
+
+$smde-color-placeholder: $smde-color-text-muted;
+
+
+//
+// Spacing
+//
+
+$width-gap: 14px;
+$width-gap-double: $width-gap * 2;
+
+
+//
+// Typography
+//
+
+// Main font-size
+$smde-font-size: 18px;
+$smde-font-size-h1: 32px;
+$smde-font-size-h2: 26px;
+$smde-font-size-h3: 24px;
+$smde-font-size-h4: 22px;
+$smde-font-size-h5: 20px;
+$smde-font-size-h6: 18px;
+$smde-font-size-code: 13px;
+
+$smde-font-weight-bold: 600;
+
+// line-height
+$smde-line-height: 1.2;
+$smde-line-height-header: 2;
+
+// font-family
+$smde-font-family:
+  // Safari for OS X and iOS (San Francisco)
+  -apple-system,
+  // Chrome for OS X (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  'Segoe UI',
+  // Android
+  'Roboto',
+  // Linux
+  'Oxygen', // KDE
+  'Ubuntu',
+  'Cantarell', // GNOME
+  // Firefox OS [R.I.P.]
+  'Fira Sans',
+  // Older Android
+  'Droid Sans',
+  // Chinese font for OSX and iOS
+  'Hiragino Sans GB',
+  // Chinese font for Windows
+  'Microsoft Yahei', '微软雅黑',
+  // Basic web fallback
+  Arial, Helvetica, STHeiti, sans-serif,
+  // Emoji
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+
+$smde-font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+// The padding of code
+$smde-padding-code: 6px 0 3px;
+
+
+//
+// z-index
+//
+
+// z-index for container
+$smde-z-index-container: 1;
+$smde-z-index-fullscreen: 9;
+
+
+//
+// Layouts
+//
+
+// Height for container
+$smde-height-container: auto !default;
+// Minimun height for container
+$smde-min-height-container: 300px !default;
+
+// Border radius for textareas and buttons
+$smde-border-radius: 3px !default;
+
+// Paddings for container
+$smde-padding-container: 10px;
+
+// A margin need to be set to hidden the right and bottom scrollbar of container
+// By default it's set in the codemirror project
+// For some reasons, if you resize the padding of the container,
+// you need to reset this margin size
+$smde-margin-hidden-scrollbar: 30px;
+
+// The left and right padding for every line
+$smde-padding-line: 4px;
+
+
+//
+// Toolbar
+//
+
+// Icon size
+$smde-width-toolbar-icon: 30px;
+// The height of toolbar in fullscreen mode
+$smde-height-toolbar-fullscreen: $smde-width-toolbar-icon + $width-gap-double;
+// The `top` of 1, 2, 3 relative to H icon
+$mde-relative-top-header-x: 2px;
+// Line height of headers
+$mde-line-height-header: 2;
+// The padding of code
+$mde-padding-code: 6px 0 3px;
+
+
+//
+// Breakpoints
+//
+
+// This is hard coded in simplemde/src/js/simplemde.js
+// Be careful if you want to change it 
+$smde-breakpoint-mobile: 700px;
+
+
+//
+// z-index
+//
+
+$mde-z-index: 1;
+$mde-z-index-fullscreen: 1000;

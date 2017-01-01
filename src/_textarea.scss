@@ -1,0 +1,99 @@
+.CodeMirror .CodeMirror-code {
+  //
+  // Colors
+  //
+
+  // HTML tag and image alt
+  .cm-tag {
+    color: $smde-color-tag;
+  }
+  // HTML attribute key
+  .cm-attribute {
+    color: $smde-color-attribute-key;
+  }
+  // HTML attribute value
+  .cm-string {
+    color: $smde-color-attribute-value;
+  }
+  .cm-link {
+    color: $smde-color-link;
+  }
+  // Url part can be muted since link is highlighted
+  .cm-url {
+    color: $smde-color-link-url;
+  }
+  .CodeMirror-selected {
+    background: $smde-color-background-selected;
+  }
+  .cm-formatting-header,
+  .cm-formatting-em,
+  .cm-formatting-strong,
+  .cm-formatting-strikethrough,
+  .cm-formatting-code,
+  .cm-formatting-code-block,
+  .cm-hr {
+    color: $smde-color-text-muted;
+  }
+
+
+  //
+  // Typography
+  //
+
+  // Headings
+  .cm-header-1,
+  .cm-header-2,
+  .cm-header-3,
+  .cm-header-4,
+  .cm-header-5,
+  .cm-header-6 {
+    line-height: $smde-line-height-header;
+  }
+  .cm-header-1 {
+    font-size: $smde-font-size-h1;
+  }
+  .cm-header-2 {
+    font-size: $smde-font-size-h2;
+  }
+  .cm-header-3 {
+    font-size: $smde-font-size-h3;
+  }
+  .cm-header-4 {
+    font-size: $smde-font-size-h4;
+  }
+  .cm-header-5 {
+    font-size: $smde-font-size-h5;
+  }
+  .cm-header-6 {
+    font-size: $smde-font-size-h6;
+  }
+
+  .cm-header,
+  .cm-strong {
+    font-weight: $smde-font-weight-bold;
+  }
+
+  // Code
+  .cm-comment {
+    font-family: $smde-font-family-monospace;
+    background: $smde-color-background-code;
+    font-size: $smde-font-size-code;
+    padding: $smde-padding-code;
+  }
+  span.CodeMirror-selectedtext.cm-comment {
+    background: $smde-color-background-code;
+  }
+
+  .cm-quote {
+    color: $smde-color-quote;
+  }
+
+  .cm-strikethrough {
+    text-decoration: line-through;
+  }
+}
+
+.CodeMirror .CodeMirror-placeholder {
+  // darkgray is the default color for placeholder in chrome
+  color: $smde-color-placeholder;
+}

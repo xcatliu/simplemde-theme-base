@@ -1,0 +1,15 @@
+// codemirror.css is prepended via gulp
+
+// Edit _custom.scss to customlize your styles
+@import 'custom';
+// Don't edit _variables.scss, edit _custom.scss instead
+@import 'variables';
+
+// Override some codemirror styles
+@import 'codemirror-override';
+
+@import 'textarea';
+// @import 'preview';
+
+// @import 'toolbar';
+// @import 'statusbar';
