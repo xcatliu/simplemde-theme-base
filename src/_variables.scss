@@ -35,8 +35,9 @@ $smde-color-placeholder: $smde-color-text-muted;
 // Spacing
 //
 
-$width-gap: 14px;
-$width-gap-double: $width-gap * 2;
+$smde-width-gap: 14px;
+$smde-width-gap-half: $smde-width-gap / 2;
+$smde-width-gap-double: $smde-width-gap * 2;
 
 
 //
@@ -52,6 +53,8 @@ $smde-font-size-h4: 22px;
 $smde-font-size-h5: 20px;
 $smde-font-size-h6: 18px;
 $smde-font-size-code: 13px;
+$smde-font-size-small: 80%;
+$smde-font-size-sub: 75%;
 
 $smde-font-weight-bold: 600;
 
@@ -133,9 +136,9 @@ $smde-padding-line: 4px;
 // Icon size
 $smde-width-toolbar-icon: 30px;
 // The height of toolbar in fullscreen mode
-$smde-height-toolbar-fullscreen: $smde-width-toolbar-icon + $width-gap-double;
+$smde-height-toolbar-fullscreen: $smde-width-toolbar-icon + $smde-width-gap-double;
 // The `top` of 1, 2, 3 relative to H icon
-$mde-relative-top-header-x: 2px;
+$smde-relative-top-header-x: 2px;
 // Line height of headers
 $mde-line-height-header: 2;
 // The padding of code

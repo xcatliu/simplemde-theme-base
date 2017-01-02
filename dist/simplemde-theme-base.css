@@ -452,4 +452,156 @@ span.CodeMirror-selectedtext { background: none; }
 .CodeMirror .CodeMirror-placeholder {
   color: #777; }
 
+.editor-toolbar {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 0 14px;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 18px; }
+  .editor-toolbar:before, .editor-toolbar:after {
+    display: block;
+    content: ' ';
+    height: 1px; }
+  .editor-toolbar:before {
+    margin-bottom: 7px; }
+  .editor-toolbar:after {
+    margin-top: 7px; }
+  .editor-toolbar a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none !important;
+    color: #777 !important;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 80%; }
+    .editor-toolbar a.active, .editor-toolbar a:hover {
+      color: #333 !important;
+      border-color: #ddd; }
+    .editor-toolbar a:before {
+      line-height: 30px; }
+    .editor-toolbar a.fa-header-x:after {
+      font-size: 75%;
+      vertical-align: text-bottom;
+      position: relative;
+      top: 2px; }
+    .editor-toolbar a.fa-header-1:after {
+      content: "1"; }
+    .editor-toolbar a.fa-header-2:after {
+      content: "2"; }
+    .editor-toolbar a.fa-header-3:after {
+      content: "3"; }
+    .editor-toolbar a.fa-header-bigger:after {
+      content: "▲"; }
+    .editor-toolbar a.fa-header-smaller:after {
+      content: "▼"; }
+  .editor-toolbar i.separator {
+    display: inline-block;
+    width: 0;
+    border-right: 1px solid #ddd;
+    color: transparent;
+    text-indent: -10px;
+    margin: 0 7px; }
+  .editor-toolbar:hover a {
+    color: #333 !important; }
+
+.editor-toolbar.fullscreen {
+  width: 100%;
+  height: 58px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9; }
+  .editor-toolbar.fullscreen::before, .editor-toolbar.fullscreen::after {
+    width: 20px;
+    height: 58px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0; }
+
+.editor-preview {
+  padding: 0 21px 14px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 7;
+  overflow: auto;
+  display: none;
+  box-sizing: border-box; }
+
+.editor-preview-side {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 50%;
+  top: 58px;
+  right: 0;
+  background: #fff;
+  z-index: 9;
+  overflow: auto;
+  display: none;
+  box-sizing: border-box;
+  border: 0;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd; }
+
+.editor-preview-active,
+.editor-preview-active-side {
+  display: block; }
+
+.editor-toolbar.disabled-for-preview a:not(.no-disable) {
+  pointer-events: none;
+  background: #fff;
+  border-color: transparent;
+  text-shadow: inherit; }
+
+@media only screen and (max-width: 700px) {
+  .editor-toolbar a.no-mobile {
+    display: none; } }
+
+.editor-statusbar {
+  padding: 7px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 80%;
+  color: #777;
+  text-align: right; }
+
+.editor-statusbar span {
+  display: inline-block;
+  margin-left: 1em; }
+
+.editor-statusbar .lines:before {
+  content: 'lines: '; }
+
+.editor-statusbar .words:before {
+  content: 'words: '; }
+
+.editor-statusbar .characters:before {
+  content: 'characters: '; }
+
 /*# sourceMappingURL=simplemde-theme-base.css.map */

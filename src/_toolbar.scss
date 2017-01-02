@@ -5,13 +5,14 @@
   
   position: relative;
   user-select: none;
-  padding: 0 $width-gap;
-  border-top: 1px solid $color-border;
-  border-left: 1px solid $color-border;
-  border-right: 1px solid $color-border;
-  border-top-left-radius: $border-radius-input;
-  border-top-right-radius: $border-radius-input;
-  font-size: $font-size;
+  padding: 0 $smde-width-gap;
+  border-top: 1px solid $smde-color-border;
+  border-left: 1px solid $smde-color-border;
+  border-right: 1px solid $smde-color-border;
+  border-top-left-radius: $smde-border-radius;
+  border-top-right-radius: $smde-border-radius;
+  font-family: $smde-font-family;
+  font-size: $smde-font-size;
 
   &:before,
   &:after {
@@ -20,10 +21,10 @@
     height: 1px;
   }
   &:before {
-    margin-bottom: $width-gap-half;
+    margin-bottom: $smde-width-gap-half;
   }
   &:after {
-    margin-top: $width-gap-half;
+    margin-top: $smde-width-gap-half;
   }
 
 
@@ -35,32 +36,31 @@
     display: inline-block;
     text-align: center;
     text-decoration: none !important;
-    color: $color-text-muted !important;
-    width: $mde-width-toolbar-icon;
-    height: $mde-width-toolbar-icon;
+    color: $smde-color-text-muted !important;
+    width: $smde-width-toolbar-icon;
+    height: $smde-width-toolbar-icon;
     margin: 0;
     border: 1px solid transparent;
-    border-radius: $border-radius-input;
+    border-radius: $smde-border-radius;
     cursor: pointer;
-    font-size: $font-size-small;
+    font-size: $smde-font-size-small;
 
     &.active,
     &:hover {
-      color: $color-text !important;
-      border-color: $color-border;
+      color: $smde-color-text !important;
+      border-color: $smde-color-border;
     }
 
     &:before {
-      line-height: $mde-width-toolbar-icon;
+      line-height: $smde-width-toolbar-icon;
     }
 
     // Header icons
     &.fa-header-x:after {
-      font-family: $font-family;
-      font-size: $font-size-sub-sup;
+      font-size: $smde-font-size-sub;
       vertical-align: text-bottom;
       position: relative;
-      top: $mde-relative-top-header-x;
+      top: $smde-relative-top-header-x;
     }
     &.fa-header-1:after {
       content: "1";
@@ -87,14 +87,14 @@
   & i.separator {
     display: inline-block;
     width: 0;
-    border-right: 1px solid $color-border;
+    border-right: 1px solid $smde-color-border;
     color: transparent;
     text-indent: -10px;
-    margin: 0 $width-gap-half;
+    margin: 0 $smde-width-gap-half;
   }
 
   &:hover a {
-    color: $color-text !important;
+    color: $smde-color-text !important;
   }
 }
 
@@ -105,24 +105,24 @@
 
 .editor-toolbar.fullscreen {
   width: 100%;
-  height: $mde-height-toolbar-fullscreen;
+  height: $smde-height-toolbar-fullscreen;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  padding-top: $width-gap;
-  padding-bottom: $width-gap;
+  padding-top: $smde-width-gap;
+  padding-bottom: $smde-width-gap;
   box-sizing: border-box;
-  background: $color-background;
+  background: $smde-color-background;
   border: 0;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: $mde-z-index-fullscreen;
+  z-index: $smde-z-index-fullscreen;
 
   &::before,
   &::after {
     width: 20px;
-    height: $mde-height-toolbar-fullscreen;
+    height: $smde-height-toolbar-fullscreen;
     position: fixed;
     top: 0;
     left: 0;
@@ -137,13 +137,13 @@
 //
 
 .editor-preview {
-  padding: 0 ($width-gap + $width-gap-half) $width-gap;
+  padding: 0 ($smde-width-gap + $smde-width-gap-half) $smde-width-gap;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background: $color-background;
+  background: $smde-color-background;
   z-index: 7;
   overflow: auto;
   display: none;
@@ -151,8 +151,8 @@
 }
 
 .editor-preview-side {
-  font-family: $font-family;
-  padding: $width-gap;
+  font-family: $smde-font-family;
+  padding: $smde-width-gap;
   position: fixed;
   bottom: 0;
   width: 50%;
