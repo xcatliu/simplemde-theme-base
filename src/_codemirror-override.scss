@@ -4,7 +4,7 @@
   border: 1px solid $smde-color-border;
   border-bottom-left-radius: $smde-border-radius;
   border-bottom-right-radius: $smde-border-radius;
-  padding: $smde-padding-container;
+  padding: $smde-width-gap;
   font-family: $smde-font-family;
   font-size: $smde-font-size;
   line-height: $smde-line-height;
@@ -36,6 +36,25 @@
   width: 50% !important;
 }
 
+// Placeholder
+.CodeMirror .CodeMirror-placeholder {
+  color: $smde-color-text-muted;
+}
+
+// Override the default every-line-paddings in codemirror.css
 .CodeMirror pre {
   padding: 0 $smde-padding-line;
+}
+
+
+//
+// Selected text background-color
+//
+
+.CodeMirror-selected,
+.CodeMirror-focused .CodeMirror-selected,
+.CodeMirror-line::selection,
+.CodeMirror-line > span::selection,
+.CodeMirror-line > span > span::selection {
+  background-color: $smde-color-background-selected;
 }

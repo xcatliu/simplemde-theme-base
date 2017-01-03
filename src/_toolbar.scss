@@ -11,7 +11,6 @@
   border-right: 1px solid $smde-color-border;
   border-top-left-radius: $smde-border-radius;
   border-top-right-radius: $smde-border-radius;
-  font-family: $smde-font-family;
   font-size: $smde-font-size;
 
   &:before,
@@ -57,10 +56,12 @@
 
     // Header icons
     &.fa-header-x:after {
-      font-size: $smde-font-size-sub;
-      vertical-align: text-bottom;
+      font-family: $smde-font-family;
+      font-size: $smde-font-size-small;
+      line-height: 0;
       position: relative;
-      top: $smde-relative-top-header-x;
+      vertical-align: baseline;
+      bottom: $smde-bottom-sub;
     }
     &.fa-header-1:after {
       content: "1";
@@ -89,6 +90,7 @@
     width: 0;
     border-right: 1px solid $smde-color-border;
     color: transparent;
+    // Hide the true charector `|`
     text-indent: -10px;
     margin: 0 $smde-width-gap-half;
   }
@@ -133,55 +135,6 @@
 
 
 //
-// Preview mode
-//
-
-.editor-preview {
-  padding: 0 ($smde-width-gap + $smde-width-gap-half) $smde-width-gap;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: $smde-color-background;
-  z-index: 7;
-  overflow: auto;
-  display: none;
-  box-sizing: border-box;
-}
-
-.editor-preview-side {
-  font-family: $smde-font-family;
-  padding: $smde-width-gap;
-  position: fixed;
-  bottom: 0;
-  width: 50%;
-  top: $smde-height-toolbar-fullscreen;
-  right: 0;
-  background: $smde-color-background;
-  z-index: $smde-z-index-fullscreen;
-  overflow: auto;
-  display: none;
-  box-sizing: border-box;
-  border: 0;
-  border-top: 1px solid $smde-color-border;
-  border-left: 1px solid $smde-color-border;
-}
-
-.editor-preview-active,
-.editor-preview-active-side {
-  display: block;
-}
-
-.editor-toolbar.disabled-for-preview a:not(.no-disable) {
-  pointer-events: none;
-  background: $smde-color-background;
-  border-color: transparent;
-  text-shadow: inherit;
-}
-
-
-//
 // Mobile mode
 //
 
@@ -189,4 +142,16 @@
   .editor-toolbar a.no-mobile {
     display: none;
   }
+}
+
+
+//
+// Disable when priview
+//
+
+.editor-toolbar.disabled-for-preview a:not(.no-disable) {
+  pointer-events: none;
+  background: $smde-color-background-preview;
+  border-color: transparent;
+  text-shadow: inherit;
 }

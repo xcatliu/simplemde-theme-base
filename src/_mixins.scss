@@ -1,0 +1,5 @@
+@mixin scroll-view() {
+  max-height: $smde-max-height-scroll-view;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}

@@ -9,29 +9,29 @@
   }
   // HTML attribute key
   .cm-attribute {
-    color: $smde-color-attribute-key;
+    color: $smde-color-tag;
   }
   // HTML attribute value
   .cm-string {
-    color: $smde-color-attribute-value;
+    color: $smde-color-text-muted;
   }
   .cm-link {
     color: $smde-color-link;
   }
   // Url part can be muted since link is highlighted
   .cm-url {
-    color: $smde-color-link-url;
+    color: $smde-color-text-muted;
   }
-  .CodeMirror-selected {
-    background: $smde-color-background-selected;
+  .cm-hr {
+    color: $smde-color-text-muted;
   }
+  // Text that won't rendered
   .cm-formatting-header,
   .cm-formatting-em,
   .cm-formatting-strong,
   .cm-formatting-strikethrough,
   .cm-formatting-code,
-  .cm-formatting-code-block,
-  .cm-hr {
+  .cm-formatting-code-block {
     color: $smde-color-text-muted;
   }
 
@@ -76,23 +76,19 @@
   // Code
   .cm-comment {
     font-family: $smde-font-family-monospace;
-    background: $smde-color-background-code;
+    background: $smde-color-background-over;
     font-size: $smde-font-size-code;
     padding: $smde-padding-code;
   }
   span.CodeMirror-selectedtext.cm-comment {
-    background: $smde-color-background-code;
+    background: $smde-color-background-over;
   }
 
   .cm-quote {
-    color: $smde-color-quote;
+    color: $smde-color-text-muted;
   }
 
   .cm-strikethrough {
     text-decoration: line-through;
   }
-}
-
-.CodeMirror .CodeMirror-placeholder {
-  color: $smde-color-placeholder;
 }
