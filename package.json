@@ -1,7 +1,7 @@
 {
   "name": "simplemde-theme-base",
   "version": "0.0.0",
-  "description": "The base theme for SimpleMDE, you can easily build your custom theme based on this.",
+  "description": "The base theme for SimpleMDE, you can easily create your custom theme based on this.",
   "main": "src/simplemde-theme-base.scss",
   "scripts": {
     "start": "gulp",

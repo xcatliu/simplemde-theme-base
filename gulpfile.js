@@ -33,8 +33,8 @@ const postcssConfig = [autoprefixer({ browsers: [
 
 const SRC_DIR = path.resolve(__dirname, 'src');
 const DIST_DIR = path.resolve(__dirname, 'dist');
-const SITE_DIR = path.resolve(__dirname, 'site');
-const SITE_CSS_DIR = path.resolve(__dirname, 'site/css');
+const SITE_DIR = path.resolve(__dirname, 'docs');
+const SITE_CSS_DIR = path.resolve(__dirname, 'docs/vendor/theme');
 
 gulp.task('default', ['build_copy'], () => {
   gulp.watch([

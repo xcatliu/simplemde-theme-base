@@ -5,13 +5,12 @@
   
   position: relative;
   user-select: none;
-  padding: 0 $smde-width-gap;
-  border-top: 1px solid $smde-color-border;
-  border-left: 1px solid $smde-color-border;
-  border-right: 1px solid $smde-color-border;
-  border-top-left-radius: $smde-border-radius;
-  border-top-right-radius: $smde-border-radius;
-  font-size: $smde-font-size;
+  padding: 0 $width-gap;
+  border: 1px solid $color-border;
+  border-bottom: 0;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  font-size: $font-size;
 
   &:before,
   &:after {
@@ -20,10 +19,10 @@
     height: 1px;
   }
   &:before {
-    margin-bottom: $smde-width-gap-half;
+    margin-bottom: $width-gap-half;
   }
   &:after {
-    margin-top: $smde-width-gap-half;
+    margin-top: $width-gap-half;
   }
 
 
@@ -35,19 +34,19 @@
     display: inline-block;
     text-align: center;
     text-decoration: none !important;
-    color: $smde-color-text-muted !important;
+    color: $color-text-muted !important;
     width: $smde-width-toolbar-icon;
     height: $smde-width-toolbar-icon;
     margin: 0;
     border: 1px solid transparent;
-    border-radius: $smde-border-radius;
+    border-radius: $border-radius;
     cursor: pointer;
-    font-size: $smde-font-size-small;
+    font-size: $font-size-small;
 
     &.active,
     &:hover {
-      color: $smde-color-text !important;
-      border-color: $smde-color-border;
+      color: $color-text !important;
+      border-color: $color-border;
     }
 
     &:before {
@@ -56,12 +55,12 @@
 
     // Header icons
     &.fa-header-x:after {
-      font-family: $smde-font-family;
-      font-size: $smde-font-size-small;
+      font-family: $font-family;
+      font-size: $font-size-small;
       line-height: 0;
       position: relative;
       vertical-align: baseline;
-      bottom: $smde-bottom-sub;
+      bottom: $bottom-sub;
     }
     &.fa-header-1:after {
       content: "1";
@@ -88,15 +87,15 @@
   & i.separator {
     display: inline-block;
     width: 0;
-    border-right: 1px solid $smde-color-border;
+    border-right: 1px solid $color-border;
     color: transparent;
     // Hide the true charector `|`
     text-indent: -10px;
-    margin: 0 $smde-width-gap-half;
+    margin: 0 $width-gap-half;
   }
 
   &:hover a {
-    color: $smde-color-text !important;
+    color: $color-text !important;
   }
 }
 
@@ -111,10 +110,10 @@
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  padding-top: $smde-width-gap;
-  padding-bottom: $smde-width-gap;
+  padding-top: $width-gap;
+  padding-bottom: $width-gap;
   box-sizing: border-box;
-  background: $smde-color-background;
+  background: $color-background;
   border: 0;
   position: fixed;
   top: 0;

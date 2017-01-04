@@ -5,14 +5,20 @@
 // Don't edit _variables.scss, edit _custom.scss instead
 @import 'variables';
 
-@import 'mixins';
-
 // Override some codemirror styles
 @import 'codemirror-override';
 
 @import 'textarea';
 @import 'preview';
 
+//
+// If your css framework doesn't contain typography styles
+// you can import the _typography.scss
+//
+// @import 'typography';
+
+@import 'table';
+@import 'embeded';
+
 @import 'toolbar';
 @import 'statusbar';
-

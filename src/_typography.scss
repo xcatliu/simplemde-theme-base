@@ -1,0 +1,149 @@
+.editor-preview,
+.editor-preview-side {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: $line-height-header;
+    margin: $margin-header;
+  }
+
+  p,
+  blockquote,
+  table,
+  hr,
+  dl,
+  ul,
+  ol,
+  pre,
+  address,
+  figure {
+    margin: $margin-block;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: $font-weight-bold;
+  }
+
+  h1 { font-size: $font-size-h1; }
+  h2 { font-size: $font-size-h2; }
+  h3 { font-size: $font-size-h3; }
+  h4 { font-size: $font-size-h4; }
+  h5 { font-size: $font-size-h5; }
+  h6 { font-size: $font-size-h6; }
+
+  a {
+    color: $color-text-link;
+    text-decoration: none;
+    // Remove gaps in links underline in iOS 8+ and Safari 8+.
+    -webkit-text-decoration-skip: objects;
+
+    &:active,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  b,
+  strong,
+  dt {
+    font-weight: $font-weight-bold;
+  }
+
+  code,
+  kbd,
+  samp {
+    background-color: $color-background-over;
+    font-family: $font-family-monospace;
+    font-size: $font-size-code;
+    padding: $padding-code;
+  }
+
+  pre {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+
+
+    background-color: $color-background-over;
+    font-family: $font-family-monospace;
+    font-size: $font-size-code;
+    line-height: $line-height-pre;
+    padding: $width-gap;
+
+    // Override the code styles
+    code {
+      background-color: transparent;
+      font-size: $font-size-code;
+      padding: 0;
+    }
+  }
+  
+  blockquote {
+    border-left: $width-gap-half solid $color-border;
+    color: $color-text-muted;
+    padding-left: $width-gap;
+  }
+
+  ul,
+  ol {
+    padding-left: ($width-gap * 2);
+  }
+
+  dt,
+  dd,
+  ol ol,
+  ul ul,
+  ol ul,
+  ul ol {
+    margin: 0;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid $color-border;
+  }
+
+  small {
+    font-size: $font-size-small;
+  }
+
+  // Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+  sub,
+  sup {
+    font-size: $font-size-small;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sub {
+    bottom: $bottom-sub;
+  }
+
+  sup {
+    top: $top-sup;
+  }
+
+  address,
+  time {
+    color: $color-text-muted;
+    font-style: normal;
+  }
+
+  mark {
+    color: $color-text;
+  }
+
+  abbr[title] {
+    border-bottom: 0;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+  }
+}

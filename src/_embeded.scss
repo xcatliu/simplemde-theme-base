@@ -1,0 +1,18 @@
+.editor-preview,
+.editor-preview-side {
+  // Add the correct display in iOS 4-7.
+  audio:not([controls]) {
+    display: none;
+    height: 0;
+  }
+
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  audio,
+  video {
+    width: 100%;
+  }
+}

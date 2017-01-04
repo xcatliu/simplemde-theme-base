@@ -1,85 +1,51 @@
 //
+//
+// Basic variables
+//
+// Try to only change the basic variables for your theme
+//
+//
+
+
+//
 // Colors
 //
 
 // Background color
-$smde-color-background: #fff;
+$color-background: #fff;
 // For code, th
-$smde-color-background-over: rgba(0, 0, 0, .05);
-// For <mark> highlight
-$smde-color-background-mark: #ff0;
-// For preview section
-$smde-color-background-preview: #fff;
+$color-background-over: rgba(0, 0, 0, .05);
 // For selected area
-$smde-color-background-selected: rgba(0, 0, 0, .1);
+$color-background-selected: rgba(0, 0, 0, .1);
 
 // Border color
-$smde-color-border: #ddd !default;
+$color-border: #ddd !default;
 
 // Text color
-$smde-color-text: #333;
-$smde-color-text-muted: #777;
-// Image alt, HTML tag and attribute
-$smde-color-tag: hsl(120, 50%, 50%);
-// The link color 
-$smde-color-link: hsl(210, 100%, 50%);
-
-
-//
-// Spacing
-//
-
-$smde-width-gap: 14px;
-$smde-width-gap-half: $smde-width-gap / 2;
-$smde-width-gap-double: $smde-width-gap * 2;
-
-// Margin for headers in preview
-$smde-margin-header: $smde-width-gap-double 0 0;
-// Margin for block elements in preview
-$smde-margin-block: $smde-width-gap 0 0;
-
-// The padding of code
-// Set it carefully because it's hard to fill the whole line
-$smde-padding-code: 6px 0 3px;
-// Preview mode
-$smde-padding-code-preview: .1em .2em;
-
-// <sub> relative bottom
-$smde-bottom-sub: -.25em;
-
-// Border radius for textareas and buttons
-$smde-border-radius: 3px !default;
+$color-text: #333;
+$color-text-muted: #777;
+// The link color
+$color-text-link: hsl(210, 100%, 50%);
 
 
 //
 // Typography
 //
 
-// Main font-size
-$smde-font-size: 18px;
-// Headers
-$smde-font-size-h1: 32px;
-$smde-font-size-h2: 26px;
-$smde-font-size-h3: 24px;
-$smde-font-size-h4: 22px;
-$smde-font-size-h5: 20px;
-$smde-font-size-h6: 18px;
-// Small
-$smde-font-size-code: 15px;
-$smde-font-size-small: 80%;
+// Basic font-size
+$font-size-base: 10px;
 
-// line-height for textarea
-// Textarea can only set line-height, no margins or paddings
-$smde-line-height: 1.5;
-$smde-line-height-header: 2;
-// line-height for preview
-$smde-line-height-preview: $smde-line-height;
-$smde-line-height-header-preview: $smde-line-height-header;
-// <pre><code>
-$smde-line-height-pre-preview: 1.2;
+// line-height
+$line-height: 1.5;
+$line-height-header: 2;
 
+//
 // font-family
-$smde-font-family:
+// If your css framework already define a nice font-family,
+// you can set it to inherit
+//
+// $font-family: inherit;
+$font-family:
   // Safari for OS X and iOS (San Francisco)
   -apple-system,
   // Chrome for OS X (San Francisco)
@@ -104,21 +70,97 @@ $smde-font-family:
   Arial, Helvetica, STHeiti, sans-serif,
   // Emoji
   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+
 // Monospace
-$smde-font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
+
+
+//
+// Spacing
+//
+
+$width-gap: 14px;
+
+// The padding of code
+// Set it carefully because it's hard to fill the whole line
+$padding-code: ($font-size-base * .6) 0 ($font-size-base * .4);
+
+// Border radius for textareas and buttons
+$border-radius: 3px !default;
+
+
+//
+// SimpleMDE specific variables, prefixed with smde-
+//
+
+// For preview section
+$smde-color-background-preview: #fff;
+// Image alt, HTML tag and attribute
+$smde-color-text-tag: hsl(120, 50%, 50%);
+
+// Icon size
+$smde-width-toolbar-icon: 30px;
+
+
+
+//
+//
+// Additional variables
+//
+// In most cases, you will not need to change these variables 
+//
+//
+
+
+//
+// Typography
+//
+
+// Main font-size
+$font-size: $font-size-base * 1.8;
+// Headers
+$font-size-h1: $font-size-base * 3.2;
+$font-size-h2: $font-size-base * 2.6;
+$font-size-h3: $font-size-base * 2.4;
+$font-size-h4: $font-size-base * 2.2;
+$font-size-h5: $font-size-base * 2;
+$font-size-h6: $font-size-base * 1.8;
+// Codes
+$font-size-code: $font-size-base * 1.4;
+// Small
+$font-size-small: 80%;
 
 // font-weight
-$smde-font-weight-bold: 600;
+$font-weight-bold: 600;
+
+// <sub> relative bottom
+// Defines the <sub> position of H1, H2, H3 icon
+$bottom-sub: -.25em;
+
 
 
 //
-// Layouts
+//
+// Danger zone
+//
+// Considering never change them
+//
 //
 
-// Height for container
-$smde-height-container: auto !default;
-// Minimun height for container
-$smde-min-height-container: 300px !default;
+
+//
+// Calculated variables
+//
+
+$width-gap-half: $width-gap / 2;
+
+// The height of toolbar in fullscreen mode
+$smde-height-toolbar-fullscreen: $smde-width-toolbar-icon + ($width-gap * 2);
+
+
+//
+// Be careful
+//
 
 // A margin need to be set to hidden the right and bottom scrollbar of container
 // By default it's set in the codemirror project, default to 30px
@@ -128,35 +170,42 @@ $smde-min-height-container: 300px !default;
 // Be careful!
 $smde-margin-hidden-scrollbar: 32px;
 
-// The left and right padding for every line
-$smde-padding-line: 0;
-
-// max-height for <pre><code>
-$smde-max-height-scroll-view: 300px;
-
-
-//
-// Toolbar
-//
-
-// Icon size
-$smde-width-toolbar-icon: 30px;
-// The height of toolbar in fullscreen mode
-$smde-height-toolbar-fullscreen: $smde-width-toolbar-icon + $smde-width-gap-double;
-
-
-//
-// Breakpoints
-//
-
 // This is hard coded in simplemde/src/js/simplemde.js
 // Be careful if you want to change it 
 $smde-breakpoint-mobile: 700px;
 
-
-//
 // z-index
+$smde-z-index-container: 1;
+$smde-z-index-fullscreen: 9;
+
+// The left and right padding for every line
+// This is not needed because SimpleMDE doesn't has line-number
+$smde-padding-line: 0;
+
+// Height for container
+// This should be set by user, not theme
+$smde-height-container: auto !default;
+// Minimun height for container
+// This should be set by user, not theme
+$smde-min-height-container: 300px !default;
+
+
+
+//
+//
+// Typography specific variables
+//
+// This is for _typography.scss, if you doesn't need them, feel free to delete them
+//
 //
 
-$smde-z-index-container: 1;
-$smde-z-index-fullscreen: 1000;
+// <pre><code>
+$line-height-pre: 1.2;
+
+// Margin for headers in preview
+$margin-header: ($width-gap * 2) 0 0;
+// Margin for block elements in preview
+$margin-block: $width-gap 0 0;
+
+// <sup> relative top
+$top-sup: -.5em;

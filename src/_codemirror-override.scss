@@ -1,14 +1,14 @@
 .CodeMirror {
   height: $smde-height-container;
   min-height: $smde-min-height-container;
-  border: 1px solid $smde-color-border;
-  border-bottom-left-radius: $smde-border-radius;
-  border-bottom-right-radius: $smde-border-radius;
-  padding: $smde-width-gap;
-  font-family: $smde-font-family;
-  font-size: $smde-font-size;
-  line-height: $smde-line-height;
-  color: $smde-color-text;
+  border: 1px solid $color-border;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  padding: $width-gap;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color-text;
   z-index: $smde-z-index-container;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .CodeMirror-fullscreen {
-  background: $smde-color-background;
+  background: $color-background;
   position: fixed !important;
   top: $smde-height-toolbar-fullscreen;
   left: 0;
@@ -29,7 +29,7 @@
   height: auto;
   z-index: $smde-z-index-fullscreen;
   border: 0;
-  border-top: 1px solid $smde-color-border;
+  border-top: 1px solid $color-border;
 }
 
 .CodeMirror-sided {
@@ -38,7 +38,7 @@
 
 // Placeholder
 .CodeMirror .CodeMirror-placeholder {
-  color: $smde-color-text-muted;
+  color: $color-text-muted;
 }
 
 // Override the default every-line-paddings in codemirror.css
@@ -56,5 +56,5 @@
 .CodeMirror-line::selection,
 .CodeMirror-line > span::selection,
 .CodeMirror-line > span > span::selection {
-  background-color: $smde-color-background-selected;
+  background-color: $color-background-selected;
 }

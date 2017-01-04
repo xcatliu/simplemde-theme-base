@@ -5,34 +5,34 @@
 
   // HTML tag and image alt
   .cm-tag {
-    color: $smde-color-tag;
+    color: $smde-color-text-tag;
   }
   // HTML attribute key
   .cm-attribute {
-    color: $smde-color-tag;
+    color: $smde-color-text-tag;
   }
   // HTML attribute value
   .cm-string {
-    color: $smde-color-text-muted;
+    color: $color-text-muted;
   }
   .cm-link {
-    color: $smde-color-link;
+    color: $color-text-link;
   }
   // Url part can be muted since link is highlighted
   .cm-url {
-    color: $smde-color-text-muted;
+    color: $color-text-muted;
   }
   .cm-hr {
-    color: $smde-color-text-muted;
+    color: $color-text-muted;
   }
-  // Text that won't rendered
+  // Text that won't rendered should be muted
   .cm-formatting-header,
   .cm-formatting-em,
   .cm-formatting-strong,
   .cm-formatting-strikethrough,
   .cm-formatting-code,
   .cm-formatting-code-block {
-    color: $smde-color-text-muted;
+    color: $color-text-muted;
   }
 
 
@@ -47,45 +47,45 @@
   .cm-header-4,
   .cm-header-5,
   .cm-header-6 {
-    line-height: $smde-line-height-header;
+    line-height: $line-height-header;
   }
   .cm-header-1 {
-    font-size: $smde-font-size-h1;
+    font-size: $font-size-h1;
   }
   .cm-header-2 {
-    font-size: $smde-font-size-h2;
+    font-size: $font-size-h2;
   }
   .cm-header-3 {
-    font-size: $smde-font-size-h3;
+    font-size: $font-size-h3;
   }
   .cm-header-4 {
-    font-size: $smde-font-size-h4;
+    font-size: $font-size-h4;
   }
   .cm-header-5 {
-    font-size: $smde-font-size-h5;
+    font-size: $font-size-h5;
   }
   .cm-header-6 {
-    font-size: $smde-font-size-h6;
+    font-size: $font-size-h6;
   }
 
   .cm-header,
   .cm-strong {
-    font-weight: $smde-font-weight-bold;
+    font-weight: $font-weight-bold;
   }
 
   // Code
   .cm-comment {
-    font-family: $smde-font-family-monospace;
-    background: $smde-color-background-over;
-    font-size: $smde-font-size-code;
-    padding: $smde-padding-code;
+    font-family: $font-family-monospace;
+    background: $color-background-over;
+    font-size: $font-size-code;
+    padding: $padding-code;
   }
   span.CodeMirror-selectedtext.cm-comment {
-    background: $smde-color-background-over;
+    background: $color-background-over;
   }
 
   .cm-quote {
-    color: $smde-color-text-muted;
+    color: $color-text-muted;
   }
 
   .cm-strikethrough {
