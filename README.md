@@ -2,7 +2,7 @@
 
 > The base theme for [SimpleMDE](https://simplemde.com/), you can easily [create your custom theme](https://github.com/xcatliu/simplemde-theme-base#create-your-theme) based on this.
 
-- [Demo](http://simplemde-theme-base.xcatliu.com/)
+- [Demo](http://simplemde-theme-base.mazimd.com/)
 - [List of themes](https://github.com/xcatliu/simplemde-theme-base/wiki/List-of-themes)
 
 ## Screenshot
