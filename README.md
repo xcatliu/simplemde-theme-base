@@ -7,16 +7,18 @@
 
 ## How to use
 
-1. Follow [SimpleMDE official guide](https://github.com/NextStepWebs/simplemde-markdown-editor#install) to initial your editor
-2. Replace  
+First, follow [SimpleMDE official guide](https://github.com/NextStepWebs/simplemde-markdown-editor#install) to initial your editor.
+
+Second, replace
 ```
 https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css
-```  
-with  
+```
+with
 ```
 https://raw.githubusercontent.com/xcatliu/simplemde-theme-base/master/dist/simplemde-theme-base.min.css
 ```
-3. That all, there is no step three
+
+That all, there is no step three
 
 ## Create your theme
 
