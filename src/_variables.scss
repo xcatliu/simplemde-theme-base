@@ -133,6 +133,9 @@ $font-size-small: 80% !default;
 // font-weight
 $font-weight-bold: 600 !default;
 
+// <pre><code> in preview is styled by codemirror.css, we need to reset it
+$line-height-pre: 1.2 !default;
+
 // <sub> relative bottom
 // Defines the <sub> position of H1, H2, H3 icon
 $bottom-sub: -.25em !default;
@@ -198,9 +201,6 @@ $smde-min-height-container: 300px !default;
 // This is for _typography.scss, if you doesn't need them, feel free to delete them
 //
 //
-
-// <pre><code>
-$line-height-pre: 1.2 !default;
 
 // Margin for headers in preview
 $margin-header: ($width-gap * 2) 0 0 !default;

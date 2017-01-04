@@ -18,7 +18,7 @@ with
 https://raw.githubusercontent.com/xcatliu/simplemde-theme-base/master/dist/simplemde-theme-base.min.css
 ```
 
-That all, there is no step three
+That all, there is no step three.
 
 ## Create your theme
 
