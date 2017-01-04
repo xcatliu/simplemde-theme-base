@@ -381,6 +381,9 @@ span.CodeMirror-selectedtext { background: none; }
 .CodeMirror-cursor {
   border-left-color: #333; }
 
+.CodeMirror-lines {
+  padding: 0; }
+
 .CodeMirror pre {
   padding: 0 0; }
 

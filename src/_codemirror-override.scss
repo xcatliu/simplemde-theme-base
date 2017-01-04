@@ -47,6 +47,10 @@
   border-left-color: $color-text;
 }
 
+.CodeMirror-lines {
+  padding: 0;
+}
+
 // Override the default every-line-paddings in codemirror.css
 .CodeMirror pre {
   padding: 0 $smde-padding-line;
