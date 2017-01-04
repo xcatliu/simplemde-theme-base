@@ -351,7 +351,8 @@ span.CodeMirror-selectedtext { background: none; }
   font-size: 18px;
   line-height: 1.5;
   color: #333;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #fff; }
 
 .CodeMirror-scroll {
   min-height: 300px;
@@ -376,6 +377,9 @@ span.CodeMirror-selectedtext { background: none; }
 
 .CodeMirror .CodeMirror-placeholder {
   color: #777; }
+
+.CodeMirror-cursor {
+  border-left-color: #333; }
 
 .CodeMirror pre {
   padding: 0 0; }
@@ -568,7 +572,8 @@ span.CodeMirror-selectedtext { background: none; }
   border-bottom: 0;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  font-size: 18px; }
+  font-size: 18px;
+  background-color: #fff; }
   .editor-toolbar:before, .editor-toolbar:after {
     display: block;
     content: ' ';

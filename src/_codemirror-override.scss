@@ -10,6 +10,7 @@
   line-height: $line-height;
   color: $color-text;
   z-index: $smde-z-index-container;
+  background-color: $color-background;
 }
 
 .CodeMirror-scroll {
@@ -39,6 +40,11 @@
 // Placeholder
 .CodeMirror .CodeMirror-placeholder {
   color: $color-text-muted;
+}
+
+// Cursor
+.CodeMirror-cursor {
+  border-left-color: $color-text;
 }
 
 // Override the default every-line-paddings in codemirror.css

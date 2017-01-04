@@ -1,20 +1,30 @@
+//
+//
+// An example for dark theme
+//
+// Also you can copy variables from _variables.scss to _custom.scss
+// to customize typography, spacing and other variables.
+//
+//
+
+
 // // Background color
-// $color-background: #fff;
+// $color-background: #444;
 // // For code, th
-// $color-background-over: rgba(0, 0, 0, .05);
+// $color-background-over: rgba(255, 255, 255, .05);
 // // For selected area
-// $color-background-selected: rgba(0, 0, 0, .1);
+// $color-background-selected: rgba(255, 255, 255, .1);
 
 // // Border color
-// $color-border: #ddd;
+// $color-border: #555;
 
 // // Text color
-// $color-text: #333;
+// $color-text: #aaa;
 // $color-text-muted: #777;
 // // The link color
-// $color-text-link: hsl(210, 100%, 50%);
+// $color-text-link: hsl(50, 100%, 50%);
 
 // // For preview section
-// $smde-color-background-preview: #fff;
+// $smde-color-background-preview: #444;
 // // Image alt, HTML tag and attribute
-// $smde-color-text-tag: hsl(120, 50%, 50%);
+// $smde-color-text-tag: hsl(80, 50%, 50%);
