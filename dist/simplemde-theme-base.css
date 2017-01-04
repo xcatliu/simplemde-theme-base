@@ -347,7 +347,7 @@ span.CodeMirror-selectedtext { background: none; }
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   padding: 14px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: inherit;
   font-size: 18px;
   line-height: 1.5;
   color: #333;
@@ -488,7 +488,7 @@ span.CodeMirror-selectedtext { background: none; }
 .editor-preview-side {
   padding: 0 14px 14px;
   color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: inherit;
   font-size: 18px;
   line-height: 1.5;
   background: #fff;
@@ -580,7 +580,7 @@ span.CodeMirror-selectedtext { background: none; }
     .editor-toolbar a:before {
       line-height: 30px; }
     .editor-toolbar a.fa-header-x:after {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family: inherit;
       font-size: 80%;
       line-height: 0;
       position: relative;
@@ -642,7 +642,7 @@ span.CodeMirror-selectedtext { background: none; }
 
 .editor-statusbar {
   padding: 7px 14px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: inherit;
   font-size: 80%;
   color: #777;
   text-align: right; }

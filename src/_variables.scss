@@ -12,20 +12,20 @@
 //
 
 // Background color
-$color-background: #fff;
+$color-background: #fff !default;
 // For code, th
-$color-background-over: rgba(0, 0, 0, .05);
+$color-background-over: rgba(0, 0, 0, .05) !default;
 // For selected area
-$color-background-selected: rgba(0, 0, 0, .1);
+$color-background-selected: rgba(0, 0, 0, .1) !default;
 
 // Border color
 $color-border: #ddd !default;
 
 // Text color
-$color-text: #333;
-$color-text-muted: #777;
+$color-text: #333 !default;
+$color-text-muted: #777 !default;
 // The link color
-$color-text-link: hsl(210, 100%, 50%);
+$color-text-link: hsl(210, 100%, 50%) !default;
 
 
 //
@@ -33,43 +33,43 @@ $color-text-link: hsl(210, 100%, 50%);
 //
 
 // Basic font-size
-$font-size-base: 10px;
+$font-size-base: 10px !default;
 
 // line-height
-$line-height: 1.5;
-$line-height-header: 2;
+$line-height: 1.5 !default;
+$line-height-header: 2 !default;
 
 //
 // font-family
 // If your css framework already define a nice font-family,
 // you can set it to inherit
 //
-// $font-family: inherit;
-$font-family:
-  // Safari for OS X and iOS (San Francisco)
-  -apple-system,
-  // Chrome for OS X (San Francisco)
-  BlinkMacSystemFont,
-  // Windows
-  'Segoe UI',
-  // Android
-  'Roboto',
-  // Linux
-  'Oxygen', // KDE
-  'Ubuntu',
-  'Cantarell', // GNOME
-  // Firefox OS [R.I.P.]
-  'Fira Sans',
-  // Older Android
-  'Droid Sans',
-  // Chinese font for OSX and iOS
-  'Hiragino Sans GB',
-  // Chinese font for Windows
-  'Microsoft Yahei', '微软雅黑',
-  // Basic web fallback
-  Arial, Helvetica, STHeiti, sans-serif,
-  // Emoji
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+$font-family: inherit !default;
+// $font-family:
+//   // Safari for OS X and iOS (San Francisco)
+//   -apple-system,
+//   // Chrome for OS X (San Francisco)
+//   BlinkMacSystemFont,
+//   // Windows
+//   'Segoe UI',
+//   // Android
+//   'Roboto',
+//   // Linux
+//   'Oxygen', // KDE
+//   'Ubuntu',
+//   'Cantarell', // GNOME
+//   // Firefox OS [R.I.P.]
+//   'Fira Sans',
+//   // Older Android
+//   'Droid Sans',
+//   // Chinese font for OSX and iOS
+//   'Hiragino Sans GB',
+//   // Chinese font for Windows
+//   'Microsoft Yahei', '微软雅黑',
+//   // Basic web fallback
+//   Arial, Helvetica, STHeiti, sans-serif,
+//   // Emoji
+//   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 
 // Monospace
 $font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
@@ -79,11 +79,11 @@ $font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New
 // Spacing
 //
 
-$width-gap: 14px;
+$width-gap: 14px !default;
 
 // The padding of code
 // Set it carefully because it's hard to fill the whole line
-$padding-code: ($font-size-base * .6) 0 ($font-size-base * .4);
+$padding-code: ($font-size-base * .6) 0 ($font-size-base * .4) !default;
 
 // Border radius for textareas and buttons
 $border-radius: 3px !default;
@@ -94,12 +94,12 @@ $border-radius: 3px !default;
 //
 
 // For preview section
-$smde-color-background-preview: #fff;
+$smde-color-background-preview: #fff !default;
 // Image alt, HTML tag and attribute
-$smde-color-text-tag: hsl(120, 50%, 50%);
+$smde-color-text-tag: hsl(120, 50%, 50%) !default;
 
 // Icon size
-$smde-width-toolbar-icon: 30px;
+$smde-width-toolbar-icon: 30px !default;
 
 
 
@@ -117,25 +117,25 @@ $smde-width-toolbar-icon: 30px;
 //
 
 // Main font-size
-$font-size: $font-size-base * 1.8;
+$font-size: $font-size-base * 1.8 !default;
 // Headers
-$font-size-h1: $font-size-base * 3.2;
-$font-size-h2: $font-size-base * 2.6;
-$font-size-h3: $font-size-base * 2.4;
-$font-size-h4: $font-size-base * 2.2;
-$font-size-h5: $font-size-base * 2;
-$font-size-h6: $font-size-base * 1.8;
+$font-size-h1: $font-size-base * 3.2 !default;
+$font-size-h2: $font-size-base * 2.6 !default;
+$font-size-h3: $font-size-base * 2.4 !default;
+$font-size-h4: $font-size-base * 2.2 !default;
+$font-size-h5: $font-size-base * 2 !default;
+$font-size-h6: $font-size-base * 1.8 !default;
 // Codes
-$font-size-code: $font-size-base * 1.4;
+$font-size-code: $font-size-base * 1.4 !default;
 // Small
-$font-size-small: 80%;
+$font-size-small: 80% !default;
 
 // font-weight
-$font-weight-bold: 600;
+$font-weight-bold: 600 !default;
 
 // <sub> relative bottom
 // Defines the <sub> position of H1, H2, H3 icon
-$bottom-sub: -.25em;
+$bottom-sub: -.25em !default;
 
 
 
@@ -152,10 +152,10 @@ $bottom-sub: -.25em;
 // Calculated variables
 //
 
-$width-gap-half: $width-gap / 2;
+$width-gap-half: $width-gap / 2 !default;
 
 // The height of toolbar in fullscreen mode
-$smde-height-toolbar-fullscreen: $smde-width-toolbar-icon + ($width-gap * 2);
+$smde-height-toolbar-fullscreen: $smde-width-toolbar-icon + ($width-gap * 2) !default;
 
 
 //
@@ -168,19 +168,19 @@ $smde-height-toolbar-fullscreen: $smde-width-toolbar-icon + ($width-gap * 2);
 // you need to reset this margin size
 // Delete all the textarea content and hide the border of the container to test it
 // Be careful!
-$smde-margin-hidden-scrollbar: 32px;
+$smde-margin-hidden-scrollbar: 32px !default;
 
 // This is hard coded in simplemde/src/js/simplemde.js
 // Be careful if you want to change it 
-$smde-breakpoint-mobile: 700px;
+$smde-breakpoint-mobile: 700px !default;
 
 // z-index
-$smde-z-index-container: 1;
-$smde-z-index-fullscreen: 9;
+$smde-z-index-container: 1 !default;
+$smde-z-index-fullscreen: 9 !default;
 
 // The left and right padding for every line
 // This is not needed because SimpleMDE doesn't has line-number
-$smde-padding-line: 0;
+$smde-padding-line: 0 !default;
 
 // Height for container
 // This should be set by user, not theme
@@ -200,12 +200,12 @@ $smde-min-height-container: 300px !default;
 //
 
 // <pre><code>
-$line-height-pre: 1.2;
+$line-height-pre: 1.2 !default;
 
 // Margin for headers in preview
-$margin-header: ($width-gap * 2) 0 0;
+$margin-header: ($width-gap * 2) 0 0 !default;
 // Margin for block elements in preview
-$margin-block: $width-gap 0 0;
+$margin-block: $width-gap 0 0 !default;
 
 // <sup> relative top
-$top-sup: -.5em;
+$top-sup: -.5em !default;
