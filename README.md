@@ -5,6 +5,10 @@
 - [Demo](http://simplemde-theme-base.xcatliu.com/)
 - [List of themes](https://github.com/xcatliu/simplemde-theme-base/wiki/List-of-themes)
 
+## Screenshot
+
+![Screenshot of SimpleMDE Theme Base](docs/simplemde-theme-base)
+
 ## How to use
 
 First, follow [SimpleMDE official guide](https://github.com/NextStepWebs/simplemde-markdown-editor#install) to initial your editor.
