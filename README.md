@@ -7,7 +7,7 @@
 
 ## Screenshot
 
-![Screenshot of SimpleMDE Theme Base](docs/simplemde-theme-base)
+![Screenshot of SimpleMDE Theme Base](docs/simplemde-theme-base.png)
 
 ## How to use
 
