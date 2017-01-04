@@ -28,7 +28,7 @@ alert(str);
 
 ### Blockquotes
 
-> The base theme for [SimpleMDE](https://simplemde.com/), you can easily create your custom theme based on this.
+> Hello blockquotes
 
 ### Horizontal rules
 
@@ -46,6 +46,6 @@ alert(str);
 <p><span style="color:red">Red text</span> and <mark>marked text</mark>.</p>`;
 
 var simplemde = new SimpleMDE({
-  element: document.getElementById('simplemde-theme-base-textarea'),
+  element: document.getElementById('textarea'),
   initialValue: initialValue
 });
