@@ -58,9 +58,9 @@ SimpleMDE Theme Base make this super easy by abstract the colors of SimpleMDE:
 // Background color
 $color-background: #444;
 // For code, th
-$color-background-over: rgba(255, 255, 255, .05);
+$color-background-over: rgba(255, 255, 255, 0.05);
 // For selected area
-$color-background-selected: rgba(255, 255, 255, .1);
+$color-background-selected: rgba(255, 255, 255, 0.1);
 
 // Border color
 $color-border: #555;
