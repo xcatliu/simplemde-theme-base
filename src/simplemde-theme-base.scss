@@ -8,6 +8,7 @@
 // Override some codemirror styles
 @import 'codemirror-override';
 
+// Textarea and preview
 @import 'textarea';
 @import 'preview';
 
@@ -16,9 +17,9 @@
 // you can import the _typography.scss
 //
 // @import 'typography';
-
 @import 'table';
 @import 'embeded';
 
+// Toolbar and statusbar
 @import 'toolbar';
 @import 'statusbar';

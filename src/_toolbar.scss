@@ -2,27 +2,27 @@
   // 
   // Container
   //
-  
-  position: relative;
-  user-select: none;
-  padding: 0 $width-gap;
+
+  background-color: $color-background;
   border: 1px solid $color-border;
   border-bottom: 0;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
   font-size: $font-size;
-  background-color: $color-background;
+  padding: 0 $width-gap;
+  position: relative;
+  user-select: none;
 
-  &:before,
-  &:after {
-    display: block;
+  &::before,
+  &::after {
     content: ' ';
+    display: block;
     height: 1px;
   }
-  &:before {
+  &::before {
     margin-bottom: $width-gap-half;
   }
-  &:after {
+  &::after {
     margin-top: $width-gap-half;
   }
 
@@ -32,67 +32,67 @@
   //
 
   a {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none !important;
-    color: $color-text-muted !important;
-    width: $smde-width-toolbar-icon;
-    height: $smde-width-toolbar-icon;
-    margin: 0;
     border: 1px solid transparent;
     border-radius: $border-radius;
+    color: $color-text-muted !important;
     cursor: pointer;
+    display: inline-block;
     font-size: $font-size-small;
+    height: $smde-width-toolbar-icon;
+    margin: 0;
+    text-align: center;
+    text-decoration: none !important;
+    width: $smde-width-toolbar-icon;
 
     &.active,
     &:hover {
-      color: $color-text !important;
       border-color: $color-border;
+      color: $color-text !important;
     }
 
-    &:before {
+    &::before {
       line-height: $smde-width-toolbar-icon;
     }
 
     // Header icons
-    &.fa-header-x:after {
+    &.fa-header-x::after {
+      bottom: $bottom-sub;
       font-family: $font-family;
       font-size: $font-size-small;
       line-height: 0;
       position: relative;
       vertical-align: baseline;
-      bottom: $bottom-sub;
     }
-    &.fa-header-1:after {
+    &.fa-header-1::after {
       content: "1";
     }
-    &.fa-header-2:after {
+    &.fa-header-2::after {
       content: "2";
     }
-    &.fa-header-3:after {
+    &.fa-header-3::after {
       content: "3";
     }
-    &.fa-header-bigger:after {
+    &.fa-header-bigger::after {
       content: "▲";
     }
-    &.fa-header-smaller:after {
+    &.fa-header-smaller::after {
       content: "▼";
     }
   }
-  
+
 
   //
   // Separator
   //
 
   & i.separator {
-    display: inline-block;
-    width: 0;
     border-right: 1px solid $color-border;
     color: transparent;
+    display: inline-block;
+    margin: 0 $width-gap-half;
     // Hide the true charector `|`
     text-indent: -10px;
-    margin: 0 $width-gap-half;
+    width: 0;
   }
 
   &:hover a {
@@ -106,30 +106,30 @@
 //
 
 .editor-toolbar.fullscreen {
-  width: 100%;
+  background-color: $color-background;
+  border: 0;
+  box-sizing: border-box;
   height: $smde-height-toolbar-fullscreen;
+  left: 0;
   overflow-x: auto;
   overflow-y: hidden;
-  white-space: nowrap;
-  padding-top: $width-gap;
   padding-bottom: $width-gap;
-  box-sizing: border-box;
-  background: $color-background;
-  border: 0;
+  padding-top: $width-gap;
   position: fixed;
   top: 0;
-  left: 0;
+  white-space: nowrap;
+  width: 100%;
   z-index: $smde-z-index-fullscreen;
 
   &::before,
   &::after {
-    width: 20px;
     height: $smde-height-toolbar-fullscreen;
-    position: fixed;
-    top: 0;
     left: 0;
     margin: 0;
     padding: 0;
+    position: fixed;
+    top: 0;
+    width: 20px;
   }
 }
 
@@ -150,8 +150,8 @@
 //
 
 .editor-toolbar.disabled-for-preview a:not(.no-disable) {
-  pointer-events: none;
-  background: $smde-color-background-preview;
+  background-color: $smde-color-background-preview;
   border-color: transparent;
+  pointer-events: none;
   text-shadow: inherit;
 }

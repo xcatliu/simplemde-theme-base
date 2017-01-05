@@ -3,10 +3,10 @@
 //
 
 .editor-statusbar {
-  padding: $width-gap-half $width-gap;
+  color: $color-text-muted;
   font-family: $font-family;
   font-size: $font-size-small;
-  color: $color-text-muted;
+  padding: $width-gap-half $width-gap;
   text-align: right;
 }
 
@@ -15,14 +15,14 @@
   margin-left: 1em;
 }
 
-.editor-statusbar .lines:before {
-  content: 'lines: '
+.editor-statusbar .lines::before {
+  content: 'lines: ';
 }
 
-.editor-statusbar .words:before {
-  content: 'words: '
+.editor-statusbar .words::before {
+  content: 'words: ';
 }
 
-.editor-statusbar .characters:before {
-  content: 'characters: '
+.editor-statusbar .characters::before {
+  content: 'characters: ';
 }

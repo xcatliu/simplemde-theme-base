@@ -1,36 +1,36 @@
 .CodeMirror {
-  height: $smde-height-container;
-  min-height: $smde-min-height-container;
+  background-color: $color-background;
   border: 1px solid $color-border;
   border-bottom-left-radius: $border-radius;
   border-bottom-right-radius: $border-radius;
-  padding: $width-gap;
+  color: $color-text;
   font-family: $font-family;
   font-size: $font-size;
+  height: $smde-height-container;
   line-height: $line-height;
-  color: $color-text;
+  min-height: $smde-min-height-container;
+  padding: $width-gap;
   z-index: $smde-z-index-container;
-  background-color: $color-background;
 }
 
 .CodeMirror-scroll {
-  min-height: $smde-min-height-container;
   margin-bottom: -$smde-margin-hidden-scrollbar;
   margin-right: -$smde-margin-hidden-scrollbar;
+  min-height: $smde-min-height-container;
   padding-bottom: $smde-margin-hidden-scrollbar;
 }
 
 .CodeMirror-fullscreen {
-  background: $color-background;
-  position: fixed !important;
-  top: $smde-height-toolbar-fullscreen;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: auto;
-  z-index: $smde-z-index-fullscreen;
+  background-color: $color-background;
   border: 0;
   border-top: 1px solid $color-border;
+  bottom: 0;
+  height: auto;
+  left: 0;
+  position: fixed !important;
+  right: 0;
+  top: $smde-height-toolbar-fullscreen;
+  z-index: $smde-z-index-fullscreen;
 }
 
 .CodeMirror-sided {

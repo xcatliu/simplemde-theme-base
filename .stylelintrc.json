@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-standard",
+  "ignoreFiles": [
+    "dist/**",
+    "docs/vendor/**"
+  ],
+  "rules": {
+    "declaration-block-properties-order": "alphabetical",
+    "max-empty-lines": 3,
+    "rule-nested-empty-line-before": null
+  }
+}

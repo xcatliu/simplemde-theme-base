@@ -21,9 +21,9 @@
 // Background color
 $color-background: #fff !default;
 // For code, th
-$color-background-over: rgba(0, 0, 0, .05) !default;
+$color-background-over: rgba(0, 0, 0, 0.05) !default;
 // For selected area
-$color-background-selected: rgba(0, 0, 0, .1) !default;
+$color-background-selected: rgba(0, 0, 0, 0.1) !default;
 
 // Border color
 $color-border: #ddd !default;
@@ -90,7 +90,7 @@ $width-gap: 14px !default;
 
 // The padding of code
 // Set it carefully because it's hard to fill the whole line
-$padding-code: ($font-size-base * .6) 0 ($font-size-base * .4) !default;
+$padding-code: ($font-size-base * 0.6) 0 ($font-size-base * 0.4) !default;
 
 // Border radius for textareas and buttons
 $border-radius: 3px !default;
@@ -145,7 +145,7 @@ $line-height-pre: 1.2 !default;
 
 // <sub> relative bottom
 // Defines the <sub> position of H1, H2, H3 icon
-$bottom-sub: -.25em !default;
+$bottom-sub: -0.25em !default;
 
 
 
@@ -215,4 +215,4 @@ $margin-header: ($width-gap * 2) 0 0 !default;
 $margin-block: $width-gap 0 0 !default;
 
 // <sup> relative top
-$top-sup: -.5em !default;
+$top-sup: -0.5em !default;
