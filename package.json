@@ -5,9 +5,11 @@
   "main": "src/simplemde-theme-base.scss",
   "scripts": {
     "start": "gulp",
-    "build": "npm test && gulp build",
+    "build": "gulp build_copy",
     "lint": "stylelint src/**/*.scss --syntax scss && echo 'stylelint passed!\\n'",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "preversion": "npm test",
+    "version": "npm run build && git add -A dist docs"
   },
   "repository": {
     "type": "git",
