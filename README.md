@@ -19,7 +19,7 @@ https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css
 ```
 with
 ```
-https://raw.githubusercontent.com/xcatliu/simplemde-theme-base/master/dist/simplemde-theme-base.min.css
+https://cdn.rawgit.com/xcatliu/simplemde-theme-base/master/dist/simplemde-theme-base.min.css
 ```
 
 That all, there is no step three.
