@@ -1,5 +1,7 @@
 # SimpleMDE Theme Base
 
+[![Build Status](https://img.shields.io/travis/xcatliu/mobi.css.svg?style=flat-square)](https://travis-ci.org/xcatliu/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg?style=flat-square)](https://www.npmjs.org/package/mobi.css)
+
 > The base theme for [SimpleMDE](https://simplemde.com/), you can easily [create your custom theme](https://github.com/xcatliu/simplemde-theme-base#create-your-theme) based on this.
 
 - [Demo](http://simplemde-theme-base.mazimd.com/)
