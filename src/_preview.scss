@@ -32,20 +32,19 @@
   padding: 0 $width-gap $width-gap;
 
   & pre {
-    background-color: $color-background-over;
+    background-color: $color-background-faded;
     font-family: $font-family-monospace;
-    font-size: $font-size-code;
+    font-size: $font-size-pre;
     line-height: $line-height-pre;
     margin-top: $width-gap;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     padding: $width-gap;
 
-
     // Override the code styles
     code {
       background-color: transparent;
-      font-size: $font-size-code;
+      font-size: $font-size-pre;
       padding: 0;
     }
   }

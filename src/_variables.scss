@@ -1,101 +1,90 @@
-//
-//
-// Please DONOT edit this file, edit _custom.scss instead
-//
-//
-
+// All variables need to be named as ${rule}-${element}-${modifier}
 
 //
-//
-// Basic variables
-//
-// Try to only change the basic variables for your theme
-//
-//
-
-
 //
 // Colors
 //
 
-// Background color
-$color-background: #fff !default;
-// For code, th
-$color-background-over: rgba(0, 0, 0, 0.05) !default;
-// For selected area
-$color-background-selected: rgba(0, 0, 0, 0.1) !default;
-
-// Border color
-$color-border: #ddd !default;
-
-// Text color
+// Add !default so _custom.scss can override it
+$color-background: white !default;
 $color-text: #333 !default;
 $color-text-muted: #777 !default;
-// The link color
-$color-text-link: hsl(210, 100%, 50%) !default;
+$color-border: #ddd !default;
 
+$color-primary: hsl(210, 70%, 50%) !default;
+$color-danger: hsl(0, 65%, 60%) !default;
 
-//
-// Typography
-//
-
-// Basic font-size
-$font-size-base: 10px !default;
-
-// line-height
-$line-height: 1.5 !default;
-$line-height-header: 2 !default;
+$color-background-faded: darken($color-background, 5%) !default;
+$color-background-selected: rgba(0, 0, 0, 0.1) !default;
 
 //
-// font-family
-// If your css framework already define a nice font-family,
-// you can set it to inherit
 //
-$font-family: inherit !default;
-// $font-family:
-//   // Safari for OS X and iOS (San Francisco)
-//   -apple-system,
-//   // Chrome for OS X (San Francisco)
-//   BlinkMacSystemFont,
-//   // Windows
-//   'Segoe UI',
-//   // Android
-//   'Roboto',
-//   // Linux
-//   'Oxygen', // KDE
-//   'Ubuntu',
-//   'Cantarell', // GNOME
-//   // Firefox OS [R.I.P.]
-//   'Fira Sans',
-//   // Older Android
-//   'Droid Sans',
-//   // Chinese font for OSX and iOS
-//   'Hiragino Sans GB',
-//   // Chinese font for Windows
-//   'Microsoft Yahei', '微软雅黑',
-//   // Basic web fallback
-//   Arial, Helvetica, STHeiti, sans-serif,
-//   // Emoji
-//   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+// Layout
+//
 
-// Monospace
-$font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
+$max-width-container: 800px !default;
+$max-width-container-wider: 1200px !default;
 
+$width-breakpoint: 768px !default;
 
+//
 //
 // Spacing
 //
 
-$width-gap: 14px !default;
+// The base size, all other size are based on it
+$size-base: 10px !default;
 
-// The padding of code
-// Set it carefully because it's hard to fill the whole line
-$padding-code: ($font-size-base * 0.6) 0 ($font-size-base * 0.4) !default;
+$width-gap: $size-base * 1.5 !default;
+$width-gap-double: $width-gap * 2 !default;
+$width-gap-half: $width-gap * 0.5 !default;
 
-// Border radius for textareas and buttons
-$border-radius: 3px !default;
+$width-padding-input: $size-base * 0.5 !default;
 
+$width-border-radius: $size-base * 0.3 !default;
 
+$width-border: 1px !default;
+
+$padding-code: 0.2em 0.3em !default;
+
+//
+//
+// Typography
+//
+
+$font-size: $size-base * 1.6 !default;
+
+$font-size-h1: $size-base * 3.2 !default;
+$font-size-h2: $size-base * 2.6 !default;
+$font-size-h3: $size-base * 2.2 !default;
+$font-size-h4: $size-base * 2 !default;
+$font-size-h5: $size-base * 1.8 !default;
+$font-size-h6: $size-base * 1.6 !default;
+
+$font-size-pre: $size-base * 1.3 !default;
+
+$font-size-small: 85% !default;
+
+$line-height: 1.5 !default;
+$line-height-header: 2 !default;
+
+$line-height-input: 1.25 !default;
+// line-height need to be set to pre, not code
+$line-height-pre: 1.2 !default;
+
+$font-weight-bold: 600 !default;
+
+$font-family: inherit !default;
+
+$font-family-monospace:
+  Menlo,
+  Monaco,
+  Consolas,
+  "Liberation Mono",
+  "Courier New",
+  monospace !default;
+
+//
 //
 // SimpleMDE specific variables, prefixed with smde-
 //
@@ -108,66 +97,10 @@ $smde-color-text-tag: hsl(120, 50%, 50%) !default;
 // Icon size
 $smde-width-toolbar-icon: 30px !default;
 
-
-
-//
-//
-// Additional variables
-//
-// In most cases, you will not need to change these variables 
-//
-//
-
-
-//
-// Typography
-//
-
-// Main font-size
-$font-size: $font-size-base * 1.8 !default;
-// Headers
-$font-size-h1: $font-size-base * 3.2 !default;
-$font-size-h2: $font-size-base * 2.6 !default;
-$font-size-h3: $font-size-base * 2.4 !default;
-$font-size-h4: $font-size-base * 2.2 !default;
-$font-size-h5: $font-size-base * 2 !default;
-$font-size-h6: $font-size-base * 1.8 !default;
-// Codes
-$font-size-code: $font-size-base * 1.4 !default;
-// Small
-$font-size-small: 80% !default;
-
-// font-weight
-$font-weight-bold: 600 !default;
-
-// <pre><code> in preview is styled by codemirror.css, we need to reset it
-$line-height-pre: 1.2 !default;
-
-// <sub> relative bottom
-// Defines the <sub> position of H1, H2, H3 icon
-$bottom-sub: -0.25em !default;
-
-
-
-//
-//
-// Danger zone
-//
-// Considering never change them
-//
-//
-
-
-//
-// Calculated variables
-//
-
-$width-gap-half: $width-gap / 2 !default;
-
 // The height of toolbar in fullscreen mode
 $smde-height-toolbar-fullscreen: $smde-width-toolbar-icon + ($width-gap * 2) !default;
 
-
+//
 //
 // Be careful
 //
@@ -182,7 +115,7 @@ $smde-margin-hidden-scrollbar: 32px !default;
 
 // This is hard coded in simplemde/src/js/simplemde.js
 // Be careful if you want to change it 
-$smde-breakpoint-mobile: 700px !default;
+$smde-breakpoint-mobile: $width-breakpoint !default;
 
 // z-index
 $smde-z-index-container: 1 !default;
@@ -199,20 +132,6 @@ $smde-height-container: auto !default;
 // This should be set by user, not theme
 $smde-min-height-container: 300px !default;
 
-
-
-//
-//
-// Typography specific variables
-//
-// This is for _typography.scss, if you doesn't need them, feel free to delete them
-//
-//
-
-// Margin for headers in preview
-$margin-header: ($width-gap * 2) 0 0 !default;
-// Margin for block elements in preview
-$margin-block: $width-gap 0 0 !default;
-
-// <sup> relative top
-$top-sup: -0.5em !default;
+// <sub> relative bottom
+// Defines the <sub> position of H1, H2, H3 icon
+$smde-bottom-sub: -0.25em !default;

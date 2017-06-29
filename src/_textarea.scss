@@ -16,7 +16,7 @@
     color: $color-text-muted;
   }
   .cm-link {
-    color: $color-text-link;
+    color: $color-primary;
   }
   // Url part can be muted since link is highlighted
   .cm-url {
@@ -75,13 +75,13 @@
 
   // Code
   .cm-comment {
-    background-color: $color-background-over;
+    background-color: $color-background-faded;
     font-family: $font-family-monospace;
-    font-size: $font-size-code;
+    font-size: $font-size-pre;
     padding: $padding-code;
   }
   span.CodeMirror-selectedtext.cm-comment {
-    background-color: $color-background-over;
+    background-color: $color-background-faded;
   }
 
   .cm-quote {

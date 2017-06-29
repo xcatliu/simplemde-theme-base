@@ -1,5 +1,11 @@
 .editor-preview,
 .editor-preview-side {
+
+  //
+  //
+  // Typography
+  //
+
   h1,
   h2,
   h3,
@@ -7,7 +13,7 @@
   h5,
   h6 {
     line-height: $line-height-header;
-    margin: $margin-header;
+    margin: $width-gap-double 0 0;
   }
 
   p,
@@ -20,7 +26,7 @@
   pre,
   address,
   figure {
-    margin: $margin-block;
+    margin: $width-gap 0 0;
   }
 
   h1,
@@ -40,7 +46,7 @@
   h6 { font-size: $font-size-h6; }
 
   a {
-    color: $color-text-link;
+    color: $color-primary;
     text-decoration: none;
     // Remove gaps in links underline in iOS 8+ and Safari 8+.
     -webkit-text-decoration-skip: objects;
@@ -60,16 +66,16 @@
   code,
   kbd,
   samp {
-    background-color: $color-background-over;
+    background-color: $color-background-faded;
     font-family: $font-family-monospace;
-    font-size: $font-size-code;
+    font-size: $font-size-small;
     padding: $padding-code;
   }
 
   pre {
-    background-color: $color-background-over;
+    background-color: $color-background-faded;
     font-family: $font-family-monospace;
-    font-size: $font-size-code;
+    font-size: $font-size-pre;
     line-height: $line-height-pre;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -78,20 +84,20 @@
     // Override the code styles
     code {
       background-color: transparent;
-      font-size: $font-size-code;
+      font-size: $font-size-pre;
       padding: 0;
     }
   }
 
   blockquote {
-    border-left: $width-gap-half solid $color-border;
+    border-left: $width-padding-input solid $color-border;
     color: $color-text-muted;
     padding-left: $width-gap;
   }
 
   ul,
   ol {
-    padding-left: ($width-gap * 2);
+    padding-left: $width-gap-double;
   }
 
   dt,
@@ -105,7 +111,7 @@
 
   hr {
     border: 0;
-    border-top: 1px solid $color-border;
+    border-top: $width-border solid $color-border;
   }
 
   small {
@@ -122,21 +128,26 @@
   }
 
   sub {
-    bottom: $bottom-sub;
+    bottom: -0.2em;
   }
 
   sup {
-    top: $top-sup;
+    top: -0.4em;
   }
 
   address,
   time {
-    color: $color-text-muted;
     font-style: normal;
   }
 
   mark {
+    background-color: yellow;
     color: $color-text;
+    padding: 0 0.2em;
+  }
+
+  rt {
+    font-size: 60%;
   }
 
   abbr[title] {
