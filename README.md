@@ -1,6 +1,6 @@
 # SimpleMDE Theme Base
 
-[![Build Status](https://img.shields.io/travis/xcatliu/simplemde-theme-base.svg?style=flat-square)](https://travis-ci.org/xcatliu/simplemde-theme-base) [![npm package](https://img.shields.io/npm/v/simplemde-theme-base.svg?style=flat-square)](https://www.npmjs.org/package/simplemde-theme-base)
+[![Build Status](https://img.shields.io/travis/xcatliu/simplemde-theme-base.svg?style=flat-square)](https://travis-ci.org/xcatliu/simplemde-theme-base) [![npm package](https://img.shields.io/npm/v/simplemde-theme-base.svg?style=flat-square)](https://www.npmjs.org/package/simplemde-theme-base) [![Greenkeeper badge](https://badges.greenkeeper.io/xcatliu/simplemde-theme-base.svg)](https://greenkeeper.io/)
 
 > The base theme for [SimpleMDE](https://simplemde.com/), you can easily [create your custom theme](https://github.com/xcatliu/simplemde-theme-base#create-your-theme) based on this.
 
