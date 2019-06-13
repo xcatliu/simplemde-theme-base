@@ -28,8 +28,8 @@ That all, there is no step three.
 
 ## Create your theme
 
-1. Folk [SimpleMDE Theme Base](https://github.com/xcatliu/simplemde-theme-base)
-2. Clone the folked repo to your workspace
+1. Fork [SimpleMDE Theme Base](https://github.com/xcatliu/simplemde-theme-base)
+2. Clone the forked repo to your workspace
 3. Run `npm install` and `npm start`
 4. Open `docs/index.html` to see the demo
 5. Update `src/_custom.scss` to customize your theme
